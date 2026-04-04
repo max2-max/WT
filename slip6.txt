@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+<book id="1">
+<title>Java Programming</title>
+<author>James Gosling</author>
+<price>450</price>
+</book>
+<book id="2">
+<title>PHP Basics</title>
+<author>Rasmus Lerdorf</author>
+<price>350</price>
+</book>
+<book id="3">
+<title>Web Development</title>
+<author>John Smith</author><price>500</price>
+</book>
+</books>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JavaScript Example</title>
+<script>
+alert("Exams are near, have you started preparing for?");
+var n1 = prompt("Enter first number");
+var n2 = prompt("Enter second number");
+var num1 = parseInt(n1);
+var num2 = parseInt(n2);
+var result = num1 + num2;
+var choice = confirm("Do you want to see the addition result?");if(choice == true)
+{
+alert("Addition of two numbers is: " + result);
+}
+else
+{
+alert("You cancelled the result display.");
+}
+</script>
+</head>
+<body>
+</body>
+</html>

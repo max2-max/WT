@@ -1,0 +1,23 @@
+<?php
+session_start();
+$eno = $_SESSION['eno'];
+$ename = $_SESSION['ename'];
+$address = $_SESSION['address'];
+$basic = $_POST['basic'];
+$da = $_POST['da'];
+$hra = $_POST['hra'];$total = $basic + $da + $hra;
+?>
+<html>
+<body>
+<h2>Employee Information</h2>
+<?php
+echo "Employee No: ".$eno."<br>";
+echo "Employee Name: ".$ename."<br>";
+echo "Address: ".$address."<br>";
+echo "Basic Salary: ".$basic."<br>";
+echo "DA: ".$da."<br>";
+echo "HRA: ".$hra."<br>";
+echo "Total Salary: ".$total."<br>";
+?>
+</body>
+</html>

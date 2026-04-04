@@ -1,0 +1,10 @@
+<?php
+$xml = simplexml_load_file("slip6.xml");
+foreach($xml->book as $b)
+{
+echo "Book ID: " . $b['id'] . "<br>";
+echo "Title: " . $b->title . "<br>";
+echo "Author: " . $b->author . "<br>";
+echo "Price: " . $b->price . "<br><br>";
+}
+?>

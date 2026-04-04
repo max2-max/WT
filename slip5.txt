@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+<item>
+<item-name>Pen</item-name>
+<item-rate>10</item-rate>
+<item-quantity>50</item-quantity>
+</item>
+<item>
+<item-name>Notebook</item-name>
+<item-rate>40</item-rate>
+<item-quantity>30</item-quantity>
+</item>
+<item><item-name>Pencil</item-name>
+<item-rate>5</item-rate>
+<item-quantity>100</item-quantity>
+</item>
+<item>
+<item-name>Eraser</item-name>
+<item-rate>3</item-rate>
+<item-quantity>80</item-quantity>
+</item>
+<item>
+<item-name>Marker</item-name>
+<item-rate>25</item-rate>
+<item-quantity>20</item-quantity>
+</item>
+</items>
