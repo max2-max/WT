@@ -1,0 +1,23 @@
+<html>
+<body>
+<h3>Select Webpage Preferences</h3>
+<form action="slip2p2.php" method="post">
+Font Style:
+<select name="style">
+<option>Arial</option>
+<option>Verdana</option>
+<option>Times New Roman</option>
+</select>
+<br><br>
+Font Size:
+<input type="text" name="size">
+<br><br>
+Font Color:
+<input type="text" name="color"><br><br>
+Background Color:
+<input type="text" name="bg">
+<br><br>
+<input type="submit" value="Save">
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?php
+$xml = simplexml_load_file("slip25.xml");
+$team = $xml->addChild('Team');
+$team->addAttribute('country','India');
+$team->addChild('player','Virat Kohli');$team->addChild('runs','12000');
+$team->addChild('wicket','5');
+$team2 = $xml->addChild('Team');
+$team2->addAttribute('country','India');
+$team2->addChild('player','Rohit Sharma');
+$team2->addChild('runs','10000');
+$team2->addChild('wicket','8');
+$xml->asXML("slip25.xml");
+echo "India team players added successfully.";
+?>

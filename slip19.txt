@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Login Validation</title>
+<script>
+function validate()
+{var uname = document.forms["login"]["username"].value;
+var pass = document.forms["login"]["password"].value;
+if(uname == "")
+{
+alert("Username cannot be empty");
+return false;
+}
+if(pass == "")
+{
+alert("Password cannot be empty");
+return false;
+}
+if(pass.length < 6)
+{
+alert("Password must be at least 6 characters");
+return false;
+}
+alert("Login Successful");
+return true;}
+</script>
+</head>
+<body>
+<h2>Login Form</h2>
+<form name="login" onsubmit="return validate()">
+Username:
+<input type="text" name="username"><br><br>
+Password:
+<input type="password" name="password"><br><br>
+<input type="submit" value="Login">
+</form>
+</body></html>

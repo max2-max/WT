@@ -1,0 +1,26 @@
+<?php
+session_start();
+// Check if the session variable exists
+if(isset($_SESSION['visit']))
+{
+$_SESSION['visit']++;
+}
+else
+{
+$_SESSION['visit'] = 1;
+}
+?>
+<!DOCTYPE html>
+<html><head>
+<title>Page Visit Counter</title>
+</head>
+<body>
+<h2>Session Tracking Example</h2>
+<?php
+echo "<p>You have visited this page <b>" . $_SESSION['visit'] . "</b> times in this
+session.</p>";
+?>
+<br>
+<a href="">Refresh Page</a>
+</body>
+</html>

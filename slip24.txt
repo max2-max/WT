@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><students>
+<student>
+<rollno>1</rollno>
+<name>ABC</name>
+<address>Pune</address>
+<college>RJSPM College</college>
+<course>BSc CS</course>
+</student>
+<student>
+<rollno>2</rollno>
+<name>LMN</name>
+<address>Pune</address>
+<college>RJSPM College</college>
+<course>BSc Cyber Security</course>
+</student>
+<student>
+<rollno>3</rollno>
+<name>PQR</name>
+<address>Pune</address>
+<college>RJSPM College</college>
+<course>BSc AI/DS</course>
+</student>
+<student>
+<rollno>4</rollno>
+<name>XYZ</name>
+<address>Pune</address>
+<college>RJSPM College</college>
+<course>BSc CS</course>
+</student>
+<student>
+<rollno>5</rollno>
+<name>MMM</name>
+<address>Pune</address>
+<college>RJSPM College</college>
+<course>BSc CS</course>
+</student>
+</students>

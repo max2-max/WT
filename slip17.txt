@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Student Registration</title>
+<script>
+function showMessage()
+{
+alert("Hello Good Morning");
+}
+</script></head>
+<body onload="showMessage()">
+<h2>Student Registration Form</h2>
+<form>
+Student Name:
+<input type="text" name="sname"><br><br>
+Address:
+<input type="text" name="address"><br><br>
+Mobile No:
+<input type="text" name="mobile"><br><br>
+Course:
+<input type="text" name="course"><br><br>
+<input type="submit" value="Register">
+<input type="reset" value="Clear"></form>
+</body>
+</html>

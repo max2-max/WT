@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Student Name Example</title>
+<script>
+function pageLoad()
+{
+alert("Page Loaded");
+}function checkName()
+{
+var name = document.getElementById("sname").value;
+if(name != "")
+{
+document.getElementById("sname").style.color = "red";
+document.getElementById("sname").style.fontSize = "18px";
+}
+else
+{
+document.getElementById("img").style.display = "block";
+}
+}
+function enlargeImage()
+{
+document.getElementById("img").style.width = "300px";
+}
+function normalImage()
+{document.getElementById("img").style.width = "150px";
+}
+</script>
+</head>
+<body onload="pageLoad()">
+<h2>Student Form</h2>
+Enter Student Name:
+<input type="text" id="sname" onblur="checkName()">
+<br><br>
+<img src="student.jpg" id="img" width="150" style="display:none"
+onmouseover="enlargeImage()"
+onmouseup="normalImage()"
+onclick="enlargeImage()">
+</body>
+</html>

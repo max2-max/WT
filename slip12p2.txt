@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>AJAX Contact</title>
+<script>
+function showData()
+{
+var x = new XMLHttpRequest();x.onreadystatechange = function()
+{
+if(x.readyState==4 && x.status==200)
+{
+var data = x.responseText.split("\n");
+var t="<table border=1>";
+t+="<tr><th>SrNo</th><th>Name</th><th>ResNo</th><th>Mobile</th><th>Address</th></tr>";
+for(var i=0;i<data.length;i++)
+{
+var c=data[i].split(",");
+t+="<tr>";
+for(var j=0;j<c.length;j++)
+{
+t+="<td>"+c[j]+"</td>";
+}
+t+="</tr>";
+}t+="</table>";
+document.getElementById("d").innerHTML=t;
+}
+};
+x.open("GET","slip12.dat",true);
+x.send();
+}
+</script>
+</head>
+<body>
+<button onclick="showData()">Print</button>
+<br><br>
+<div id="d"></div>
+</body></html>

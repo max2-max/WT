@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Fibonacci Series</title>
+<script>
+function fibonacci()
+{
+var n = prompt("Enter number of terms");
+var a = 0, b = 1, c;var result = "Fibonacci Series: " + a + " " + b;
+for(var i=3; i<=n; i++)
+{
+c = a + b;
+result = result + " " + c;
+a = b;
+b = c;
+}
+document.getElementById("d").innerHTML = result;
+}
+</script>
+</head>
+<body>
+<h2>Fibonacci Series Program</h2>
+<button onclick="fibonacci()">Print Fibonacci</button><br><br>
+<p id="d"></p>
+</body>
+</html>

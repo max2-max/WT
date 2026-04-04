@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Teacher Details</title>
+<script>
+function showTeacher(str)
+{
+var x=new XMLHttpRequest();
+x.onreadystatechange=function()
+{
+if(x.readyState==4 && x.status==200)
+{
+document.getElementById("d").innerHTML=x.responseText;
+}
+};
+x.open("GET","slip14p2.php?tname="+str,true);
+x.send();
+}</script>
+</head>
+<body>
+Select Teacher :
+<select onchange="showTeacher(this.value)">
+<option value="">Select</option>
+<option value="Amit">Amit</option>
+<option value="Rahul">Rahul</option>
+<option value="Sneha">Sneha</option>
+</select>
+<br><br>
+<div id="d"></div>
+</body>
+</html>

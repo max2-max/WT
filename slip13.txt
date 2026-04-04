@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>AJAX Name Example</title>
+<script>
+function showMessage(str)
+{
+var x = new XMLHttpRequest();
+x.onreadystatechange = function(){
+if(x.readyState == 4 && x.status == 200)
+{
+document.getElementById("msg").innerHTML = x.responseText;
+}
+};
+x.open("GET","slip13p2.php?name="+str,true);
+x.send();
+}
+</script>
+</head>
+<body>
+<h2>Enter Your Name</h2>
+<input type="text" onkeyup="showMessage(this.value)">
+<p id="msg"></p></body>
+</html>

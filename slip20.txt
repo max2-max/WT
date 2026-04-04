@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+<student>
+<rollno>1</rollno>
+<name>ABC</name>
+<course>BSc CS</course>
+<year>TY</year>
+</student>
+<student>
+<rollno>2</rollno>
+<name>LMN</name>
+<course>BSc CS</course><year>SY</year>
+</student>
+<student>
+<rollno>3</rollno>
+<name>PQR</name>
+<course>BSc IT</course>
+<year>TY</year>
+</student>
+<student>
+<rollno>4</rollno>
+<name>XYZ</name>
+<course>BSc CS</course>
+<year>FY</year>
+</student>
+<student>
+<rollno>5</rollno>
+<name>MMM</name>
+<course>BSc IT</course>
+<year>SY</year>
+</student></students>

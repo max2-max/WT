@@ -1,0 +1,8 @@
+<?php
+$a=array("Rohit","Virat","Dhoni","Rahul","Hardik");
+$q=$_GET["q"];foreach($a as $n)
+{
+if(stripos($n,$q)===0)
+echo $n." ";
+}
+?>

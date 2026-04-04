@@ -1,0 +1,13 @@
+<?php
+$con = pg_connect("host=localhost dbname=practice_db user=postgres password=postgres");
+$name = $_GET['tname'];
+$q = "SELECT * FROM TEACHER WHERE tname='$name'";
+$r = pg_query($con,$q);
+while($row = pg_fetch_assoc($r))
+{
+echo "Teacher No : ".$row['tno']."<br>";
+echo "Teacher Name : ".$row['tname']."<br>";
+echo "Qualification : ".$row['qualification']."<br>";
+echo "Salary : ".$row['salary']."<br>";
+}
+?>
