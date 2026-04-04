@@ -1,0 +1,18 @@
+<?php
+session_start();
+if(!isset($_SESSION['attempt']))
+{
+$_SESSION['attempt'] = 0;}
+?>
+<html>
+<body>
+<h2>Login Form</h2>
+<form action="slip3p2.php" method="post">
+Username:
+<input type="text" name="username"><br><br>
+Password:
+<input type="password" name="password"><br><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>

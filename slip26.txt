@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function showEmployee(str)
+{if(str=="")
+{
+document.getElementById("txt").innerHTML="";
+return;
+}
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange=function()
+{
+if(this.readyState==4 && this.status==200)
+{
+document.getElementById("txt").innerHTML=this.responseText;
+}
+};
+xmlhttp.open("GET","slip26p2.php?q="+str,true);
+xmlhttp.send();
+}
+</script>
+</head><body>
+<h2>Select Employee</h2>
+<select onchange="showEmployee(this.value)">
+<option value="">Select Employee</option>
+<option value="ABC">ABC</option>
+<option value="LMN">LMN</option>
+<option value="PQR">PQR</option>
+<option value="XYZ">XYZ</option>
+<option value="MMM">MMM</option>
+</select>
+<br><br>
+<div id="txt"></div>
+</body>
+</html>

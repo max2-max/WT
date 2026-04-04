@@ -1,0 +1,11 @@
+<?php
+setcookie("style", $_POST['style'], time()+3600);
+setcookie("size", $_POST['size'], time()+3600);
+setcookie("color", $_POST['color'], time()+3600);
+setcookie("bg", $_POST['bg'], time()+3600);echo "Preferences Saved<br><br>";
+echo "Font Style: ".$_POST['style']."<br>";
+echo "Font Size: ".$_POST['size']."<br>";
+echo "Font Color: ".$_POST['color']."<br>";
+echo "Background Color: ".$_POST['bg']."<br>";
+echo "<br><a href='slip2p3.php'>Click to Apply Settings</a>";
+?>

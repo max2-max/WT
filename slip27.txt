@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function validateVoter()
+{
+var name=document.getElementById("name").value;
+var age=document.getElementById("age").value;
+var nation=document.getElementById("nation").value;
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange=function()
+{
+if(this.readyState==4 && this.status==200)
+{
+document.getElementById("result").innerHTML=this.responseText;
+}
+};xmlhttp.open("GET","slip27p2.php?name="+name+"&age="+age+"&nation="+nation
+,true);
+xmlhttp.send();
+}
+</script>
+</head>
+<body>
+<h2>Voter Validation Form</h2>
+Name :
+<input type="text" id="name"><br><br>
+Age :
+<input type="text" id="age"><br><br>
+Nationality :
+<input type="text" id="nation"><br><br><button onclick="validateVoter()">Check</button>
+<br><br>
+<div id="result"></div>
+</body>
+</html>

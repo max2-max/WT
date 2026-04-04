@@ -1,0 +1,25 @@
+<?php
+session_start();
+$correct_user = "admin";
+$correct_pass = "123";
+$user = $_POST['username'];
+$pass = $_POST['password'];
+if($user == $correct_user && $pass == $correct_pass)
+{
+echo "<h2>Welcome ".$user."</h2>";
+echo "Login Successful";
+}
+else
+{
+$_SESSION['attempt']++;
+if($_SESSION['attempt'] < 3)
+{
+echo "Invalid Username or Password<br>";echo "Attempts Left: ".(3-$_SESSION['attempt'])."<br>";
+echo "<a href='slip3.php'>Try Again</a>";
+}
+else
+{
+echo "Maximum Login Attempts Reached";
+}
+}
+?>

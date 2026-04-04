@@ -1,0 +1,20 @@
+<?php
+$name=$_GET['name'];
+$age=$_GET['age'];
+$nation=$_GET['nation'];
+if(!ctype_upper($name))
+{
+echo "Name must be in UPPERCASE letters.";
+}
+else if($age<18)
+{echo "Age must be 18 or above for voting.";
+}
+else if($nation!="Indian")
+{
+echo "Nationality must be Indian.";
+}
+else
+{
+echo "Valid Voter.";
+}
+?>

@@ -1,0 +1,13 @@
+<?php
+$style = $_COOKIE['style'];
+$size = $_COOKIE['size'];
+$color = $_COOKIE['color'];
+$bg = $_COOKIE['bg'];
+?>
+<html>
+<body style="font-family:<?php echo $style;?>;font-size:<?php echo $size;?>px;
+color:<?php echo $color;?>;
+background-color:<?php echo $bg;?>">
+<h2>This page uses your saved preferences</h2>
+</body>
+</html>
