@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Check if the session variable exists
+
 if(isset($_SESSION['visit']))
 {
 $_SESSION['visit']++;
